@@ -19,7 +19,7 @@ namespace SCGPServiceGetDeliveryList.Controllers
             _deliveryService = deliveryService;
         }
         
-        [HttpPost()]
+        [HttpPost("SDI01 Delivery List")]
         public IActionResult ReceiveDeliveryLists(List<IFormFile> files)
         {
 
@@ -33,10 +33,19 @@ namespace SCGPServiceGetDeliveryList.Controllers
 
             List<DeliveryList> deliveryList = FilesToModals(files);
 
+            /*if (ModelState.IsValid)
+            {
+                Console.WriteLine("S");
+            }
+            else
+            {
+                Console.WriteLine("E");
+            }   */
+
             return Ok(deliveryList);
         }
 
-        [HttpGet("{deliveryId}")]
+        /*[HttpGet("SDO02 Result for Delivery List/{deliveryId}")]
         public IActionResult RespondDeliveryLists(string deliveryId)
         {
             DeliveryList delivery = _deliveryService.GetDelivery(deliveryId);
@@ -57,7 +66,7 @@ namespace SCGPServiceGetDeliveryList.Controllers
              );
 
             return Ok(delivery);
-        }
+        }*/
 
         protected List<DeliveryList> FilesToModals(List<IFormFile> files)
         {
@@ -87,6 +96,8 @@ namespace SCGPServiceGetDeliveryList.Controllers
                 deliveryList.ZDELIVERY = deliveryItem;
                 ExtractShipment(deliveryList, deliveryDocument, rootNode);
                 ExtractKeyInput(deliveryList, deliveryDocument, rootNode);
+
+                _deliveryService.ReceiveDelivery(deliveryList);
 
                 list.Add(deliveryList);
             }

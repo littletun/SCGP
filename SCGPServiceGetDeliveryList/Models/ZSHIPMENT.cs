@@ -17,19 +17,26 @@ namespace SCGPServiceGetDeliveryList.Models
         }
 
         [Required]
-        public string SHIPMENT_NUMBER { get; set; }
+        [StringLength(10)]
+        public string? SHIPMENT_NUMBER { get; set; }
         [Required]
-        public string SHIPMENT_TYPE { get; set; }
+        [StringLength(4)]
+        public string? SHIPMENT_TYPE { get; set; }
         [Required]
-        public string SHIPPING_TYPE { get; set; }
+        [StringLength(2)]
+        public string? SHIPPING_TYPE { get; set; }
         [Required]
-        public string FWD_ID { get; set; }
+        [StringLength(10)]
+        public string? FWD_ID { get; set; }
         [Required]
-        public string VEHICLE_ID { get; set; }
+        [StringLength(20)]
+        public string? VEHICLE_ID { get; set; }
         [Required]
-        public string END_PLAN_DATE { get; set; }
+        [StringLength(10)]
+        public string? END_PLAN_DATE { get; set; }
         [Required]
-        public string END_PLAN_TIME { get; set; }
+        [StringLength(8)]
+        public string? END_PLAN_TIME { get; set; }
 
     }
 }

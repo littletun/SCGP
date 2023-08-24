@@ -4,14 +4,16 @@ namespace SCGPServiceGetDeliveryList.Models
 {
     public class DeliveryList
     {
+        [StringLength(24)]
         public string ZKEY { get; set; }
 
         [Required]
-        public string MESSAGE_ID { get; set; }
+        [StringLength(40)]
+        public string? MESSAGE_ID { get; set; }
         [Required]
-        public ZDELIVERY ZDELIVERY { get; set; }
+        public ZDELIVERY? ZDELIVERY { get; set; }
         [Required]
-        public ZSHIPMENT ZSHIPMENT { get; set; }
+        public ZSHIPMENT? ZSHIPMENT { get; set; }
         
     }
 }

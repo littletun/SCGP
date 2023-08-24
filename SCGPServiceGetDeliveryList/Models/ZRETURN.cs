@@ -1,4 +1,6 @@
-﻿namespace SCGPServiceGetDeliveryList.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SCGPServiceGetDeliveryList.Models
 {
     public class ZRETURN
     {
@@ -11,10 +13,20 @@
             ERROR_MESSAGE = eRROR_MESSAGE;
         }
 
-        public string DELIVERY_NUMBER { get; set; }
-        public string DELIVERY_ITEM_NO { get; set; }
-        public string STATUS_TYPE { get; set; }
-        public string ERROR_CODE { get; set; }
-        public string ERROR_MESSAGE { get; set; }
+        [Required]
+        [StringLength(10)]
+        public string? DELIVERY_NUMBER { get; set; }
+        [Required]
+        [StringLength(6)]
+        public string? DELIVERY_ITEM_NO { get; set; }
+        [Required]
+        [StringLength(1)]
+        public string? STATUS_TYPE { get; set; }
+        [Required]
+        [StringLength(3)]
+        public string? ERROR_CODE { get; set; }
+        [Required]
+        [StringLength(255)]
+        public string? ERROR_MESSAGE { get; set; }
     }
 }

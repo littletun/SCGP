@@ -39,60 +39,87 @@ namespace SCGPServiceGetDeliveryList.Models
         }
 
         [Required]
-        public string DELIVERY_NUMBER { get; set; }
+        [StringLength(10)]
+        public string? DELIVERY_NUMBER { get; set; }
         [Required]
-        public string DELIVERY_DATE { get; set; }
+        [StringLength(10)]
+        public string? DELIVERY_DATE { get; set; }
         [Required]
-        public string DELIVERY_CREATE { get; set; }
+        [StringLength(10)]
+        public string? DELIVERY_CREATE { get; set; }
         [Required]
-        public string DELIVERY_TIME { get; set; }
+        [StringLength(8)]
+        public string? DELIVERY_TIME { get; set; }
         [Required]
-        public string DELIVERY_ITEM_NO { get; set; }
+        [StringLength(6)]
+        public string? DELIVERY_ITEM_NO { get; set; }
         [Required]
-        public string SHIPTO_ID { get; set; }
+        [StringLength(10)]
+        public string? SHIPTO_ID { get; set; }
         [Required]
-        public string SOLDTO_ID { get; set; }
+        [StringLength(10)]
+        public string? SOLDTO_ID { get; set; }
         [Required]
-        public string SHIPTO_NAME { get; set; }
+        [StringLength(40)]
+        public string? SHIPTO_NAME { get; set; }
         [Required]
-        public string SOLDTO_NAME { get; set; }
+        [StringLength(40)]
+        public string? SOLDTO_NAME { get; set; }
         [Required]
-        public string MATERIAL_NUMBER { get; set; }
+        [StringLength(18)]
+        public string? MATERIAL_NUMBER { get; set; }
         [Required]
-        public string MATERIAL_DES { get; set; }
+        [StringLength(40)]
+        public string? MATERIAL_DES { get; set; }
         [Required]
-        public string STORAGE { get; set; }
+        [StringLength(4)]
+        public string? STORAGE { get; set; }
         [Required]
-        public string GRADE { get; set; }
+        [StringLength(6)]
+        public string? GRADE { get; set; }
         [Required]
-        public string NET_WEIGHT { get; set; }
+        [StringLength(19)]
+        public string? NET_WEIGHT { get; set; }
         [Required]
-        public string GROSS_WEIGHT { get; set; }
+        [StringLength(19)]
+        public string? GROSS_WEIGHT { get; set; }
         [Required]
-        public string WEIGHT_UNIT { get; set; }
+        [StringLength(3)]
+        public string? WEIGHT_UNIT { get; set; }
         [Required]
-        public string PLANT { get; set; }
+        [StringLength(4)]
+        public string? PLANT { get; set; }
         [Required]
-        public string SHIPPING_POINT { get; set; }
+        [StringLength(4)]
+        public string? SHIPPING_POINT { get; set; }
         [Required]
-        public string DN_ITEM_QTY { get; set; }
+        [StringLength(17)]
+        public string? DN_ITEM_QTY { get; set; }
         [Required]
-        public string PI_NUMBER { get; set; }
+        [StringLength(10)]
+        public string? PI_NUMBER { get; set; }
         [Required]
-        public string SALES_DOCUMENT_NO { get; set; }
+        [StringLength(10)]
+        public string? SALES_DOCUMENT_NO { get; set; }
+        [StringLength(35)]
         public string? PO_NUMBER { get; set; }
         [Required]
-        public string SALES_ITEM_NO { get; set; }
+        [StringLength(6)]
+        public string? SALES_ITEM_NO { get; set; }
         [Required]
-        public string BASE_UNIT { get; set; }
+        [StringLength(3)]
+        public string? BASE_UNIT { get; set; }
         [Required]
-        public string SALES_UNIT { get; set; }
+        [StringLength(3)]
+        public string? SALES_UNIT { get; set; }
 
-
-        public string? NUM_OF_PALLET { get; set; }
-        public string? WMS_DELIVERY_NO { get; set; }
-        public string? IC_TO_LOGISTIC { get; set; }
-        public string? IC_TO_WAREHOUSE { get; set; }
-
+        [StringLength(50)]
+        public string NUM_OF_PALLET { get; set; }
+        [StringLength(10)]
+        public string WMS_DELIVERY_NO { get; set; }
+        [StringLength(100)]
+        public string IC_TO_LOGISTIC { get; set; }
+        [StringLength(100)]
+        public string IC_TO_WAREHOUSE { get; set; }
     }
 }
