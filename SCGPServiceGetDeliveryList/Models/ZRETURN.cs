@@ -1,16 +1,26 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Xml;
 
 namespace SCGPServiceGetDeliveryList.Models
 {
     public class ZRETURN
     {
-        public ZRETURN(string dELIVERY_NUMBER, string dELIVERY_ITEM_NO, string sTATUS_TYPE, string eRROR_CODE, string eRROR_MESSAGE)
+        public ZRETURN(XmlNode deliveryNode)
         {
-            DELIVERY_NUMBER = dELIVERY_NUMBER;
-            DELIVERY_ITEM_NO = dELIVERY_ITEM_NO;
-            STATUS_TYPE = sTATUS_TYPE;
-            ERROR_CODE = eRROR_CODE;
-            ERROR_MESSAGE = eRROR_MESSAGE;
+            DELIVERY_NUMBER = deliveryNode["DELIVERY_NUMBER"].InnerText;
+            DELIVERY_ITEM_NO = deliveryNode["DELIVERY_ITEM_NO"].InnerText;
+            STATUS_TYPE = (DELIVERY_NUMBER.Length > 0) && (DELIVERY_ITEM_NO.Length > 0) ? "S" : "E";
+            ERROR_CODE = (STATUS_TYPE == "S") ? "" : "Error";
+            ERROR_MESSAGE = (STATUS_TYPE == "S") ? "Received delivery successfully" : "Failed delivery";
+        }
+
+        public ZRETURN(XmlNode deliveryNode, XmlDocument document)
+        {
+            DELIVERY_NUMBER = deliveryNode["DELIVERY_NUMBER"].InnerText;
+            DELIVERY_ITEM_NO = deliveryNode["DELIVERY_ITEM_NO"].InnerText;
+            STATUS_TYPE = deliveryNode["STATUS_TYPE"].InnerText;
+            ERROR_CODE = deliveryNode["ERROR_CODE"].InnerText;
+            ERROR_MESSAGE = deliveryNode["ERROR_MESSAGE"].InnerText;
         }
 
         [Required]

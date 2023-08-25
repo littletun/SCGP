@@ -8,7 +8,7 @@ namespace SCGPServiceGetDeliveryList.Services.Delivery
 
         public void ReceiveDelivery(DeliveryList deliveryList)
         {
-            _deliveryDB.Add(Guid.NewGuid(), deliveryList);
+            _deliveryDB.Add(deliveryList.DeliveryId, deliveryList);
         }
 
         public DeliveryList GetDelivery(Guid deliveryKey)
