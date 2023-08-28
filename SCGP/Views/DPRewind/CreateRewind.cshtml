@@ -1,0 +1,106 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        Create Rewind No
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">สร้างข้อมูล Rewind</div>
+                <div class="mt-5">
+
+                    <div class="grid grid-cols-12 gap-3 p-2">
+                        <div class="col-span-6">
+                            <div class="border border-slate-200/60 shadow-md h-full p-5">
+                                <div class="intro-y flex flex-col gap-5">
+
+                                    <div>
+                                        <label>Document Type</label>
+                                        <div class="flex flex-col sm:flex-row mt-2">
+                                            <div class="form-check mr-2">
+                                                <input id="" class="form-check-input" type="radio" name="document-type">
+                                                <label class="form-check-label" for="">Interface SAP</label>
+                                            </div>
+                                            <div class="form-check mr-2 mt-2 sm:mt-0">
+                                                <input id="" class="form-check-input" type="radio" name="document-type">
+                                                <label class="form-check-label" for="">Plant</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label for="rewind-no" class="form-label">Plant</label>
+                                        <select class="form-control">
+                                            <option selected disabled>Please Select</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="rewind-no" class="form-label">Rewind No</label>
+                                        <input id="rewind-no" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="rewind-no" class="form-label">DP No</label>
+                                        <input id="rewind-no" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="plant" class="form-label">Remark</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex justify-center gap-5 mt-5">
+                                    <button class="btn btn-primary shadow-md self-end" data-tw-merge>Create DP</button>
+                                    <button class="btn btn-warning shadow-md self-end" data-tw-merge>พิมพ์ใบตั้ง</button>
+                                    <button class="btn btn-secondary shadow-md self-end" data-tw-merge>Clear Screen</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <div class="border border-slate-200/60 shadow-md h-full p-5">
+                                <div class="intro-y flex flex-wrap gap-5">
+                                    <div>
+                                        <label for="rewind-no" class="form-label">Material</label>
+                                        <input id="rewind-no" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="plant" class="form-label">QTY</label>
+                                        <input id="plant" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <button class="btn btn-primary shadow-md self-end" data-tw-merge="">Add</button>
+                                </div>
+
+                                <div class="overflow-x-auto mt-5">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="whitespace-nowrap"></th>
+                                                <th class="text-center whitespace-nowrap">MATERIAL</th>
+                                                <th class="text-center whitespace-nowrap">QTY</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END: Content -->
+</div>

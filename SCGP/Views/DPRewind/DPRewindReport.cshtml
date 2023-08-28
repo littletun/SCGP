@@ -1,0 +1,71 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        DP Rewind Report
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">DP Rewind Report </div>
+                <div class="mt-5">
+
+                    <div class="intro-y flex flex-wrap gap-5">
+                        <div>
+                            <label for="" class="form-label">Date</label>
+                            <input type="text" data-daterange="true" class="datepicker form-control">
+                        </div>
+
+                        <div>
+                            <label for="plant" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected disabled>Please Select</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary shadow-md self-end" data-tw-merge>Select</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Result</div>
+            <div class="mt-5">
+
+
+                <div class="overflow-x-auto mt-5">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="whitespace-nowrap">WHCODE</th>
+                                <th class="text-center whitespace-nowrap">INTERFACE SAP</th>
+                                <th class="text-center whitespace-nowrap">REWIND DATE</th>
+                                <th class="text-center whitespace-nowrap">DP NO</th>
+                                <th class="text-center whitespace-nowrap">CUSTOMER NAME</th>
+                                <th class="text-center whitespace-nowrap">GRADE</th>
+                                <th class="text-center whitespace-nowrap">SIZE</th>
+                                <th class="text-center whitespace-nowrap">ORDER QTY</th>
+                                <th class="text-center whitespace-nowrap">REWIND NO</th>
+                                <th class="text-center whitespace-nowrap">MAT DOC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

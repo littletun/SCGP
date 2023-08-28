@@ -1,0 +1,164 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        DP Rewind Receive
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">ระบุข้อมูลเลขที่ DP Rewind</div>
+                <div class="mt-5">
+
+                    <div class="intro-y flex flex-wrap gap-5">
+                        <div>
+                            <label for="" class="form-label">เลขที่เอกสารที่แก้ไข</label>
+                            <input id="" type="text" class="form-control" placeholder="">
+                        </div>
+
+                        <button class="btn btn-primary shadow-md self-end" data-tw-merge>Search</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">ข้อมูลรายละเอียด DP Rewind</div>
+            <div class="mt-5">
+
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">Rewind Number</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">Rewind</label>
+                        <select class="form-control">
+                            <option selected="" disabled="">REWIND CUSTOMER</option>
+                        </select>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">From Plant</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">To Plant</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">Total Weight</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">Total Batch</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">Create By</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-3">
+                        <label for="" class="form-label">Create Date</label>
+                        <input id="" type="text" class="form-control" placeholder="" readonly>
+                    </div>
+                </div>
+
+
+                <div class="overflow-x-auto mt-5">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="whitespace-nowrap uppercase">select</th>
+                                <th class="text-center whitespace-nowrap uppercase">qi</th>
+                                <th class="text-center whitespace-nowrap uppercase">block</th>
+                                <th class="text-center whitespace-nowrap uppercase">new material</th>
+                                <th class="text-center whitespace-nowrap uppercase">new batch</th>
+                                <th class="text-center whitespace-nowrap uppercase">weight</th>
+                                <th class="text-center whitespace-nowrap uppercase">old material</th>
+                                <th class="text-center whitespace-nowrap uppercase">old batch</th>
+                                <th class="text-center whitespace-nowrap uppercase">weight</th>
+                                <th class="text-center whitespace-nowrap uppercase">rewind no</th>
+                                <th class="text-center whitespace-nowrap uppercase">length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-20">
+                                    <div class="form-check justify-center">
+                                        <input id="" class="form-check-input" type="checkbox" value="">
+                                    </div>
+                                </td>
+                                <td class="w-20">
+                                    <div class="form-check justify-center">
+                                        <input id="" class="form-check-input" type="checkbox" value="">
+                                    </div>
+                                </td>
+                                <td class="w-20">
+                                    <div class="form-check justify-center">
+                                        <input id="" class="form-check-input" type="checkbox" value="">
+                                    </div>
+                                </td>
+                                <td class="text-center">Z02GFP170E128030BE</td>
+                                <td class="text-center">HH3A41142A</td>
+                                <td class="text-center">1.367</td>
+                                <td class="text-center">Z02gfp170E128075BB</td>
+                                <td class="text-center">HH3A411422</td>
+                                <td class="text-center">2.423</td>
+                                <td class="text-center">RW-BP23-000132</td>
+                                <td class="text-center">6154.000</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="flex justify-center mt-5">
+                    <button class="btn btn-primary">Send to SAP</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Return Message From SAP</div>
+            <div class="mt-5">
+
+                <div class="overflow-x-auto mt-5">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="whitespace-nowrap uppercase">Movement Type</th>
+                                <th class="text-center whitespace-nowrap uppercase">SAP Message</th>
+                                <th class="text-center whitespace-nowrap uppercase">SAP Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

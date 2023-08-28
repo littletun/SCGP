@@ -8,10 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SCGP.Controllers
 {
-    public class MasterDataController : Controller
+    public class ServerController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Authorzize()
+        public IActionResult Index()
         {
             return View();
         }

@@ -16,12 +16,120 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/tun/Projects/SCGP/SCGP
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/tun/Projects/SCGP/SCGP/Views/Authorize/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9yaXplL0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Authorize/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9yaXplL0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Authorize/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9yaXplL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Authorize/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9yaXplL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/DPRewind/CreateRewind.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRFBSZXdpbmQvQ3JlYXRlUmV3aW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/DPRewind/DPRewindReciept.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRFBSZXdpbmQvRFBSZXdpbmRSZWNpZXB0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/DPRewind/DPRewindReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRFBSZXdpbmQvRFBSZXdpbmRSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/DPRewind/LoadRewind.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRFBSZXdpbmQvTG9hZFJld2luZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/DPRewind/PrintDP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRFBSZXdpbmQvUHJpbnREUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/DPRewind/ViewDP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRFBSZXdpbmQvVmlld0RQLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsIssue/DisplayDP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNJc3N1ZS9EaXNwbGF5RFAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsIssue/LoadDP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNJc3N1ZS9Mb2FkRFAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsIssue/ScanDPComplete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNJc3N1ZS9TY2FuRFBDb21wbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsIssue/SendToSAPComplete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNJc3N1ZS9TZW5kVG9TQVBDb21wbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsIssue/SendToSAPError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNJc3N1ZS9TZW5kVG9TQVBFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsIssue/ViewWeight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNJc3N1ZS9WaWV3V2VpZ2h0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/GoodsTransfer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR29vZHNUcmFuc2Zlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tun/Projects/SCGP/SCGP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tun/Projects/SCGP/SCGP/Views/MasterData/Authorize.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyRGF0YS9BdXRob3JpemUuY3NodG1s
+[/Users/tun/Projects/SCGP/SCGP/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Plant/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxhbnQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Problems/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvYmxlbXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Report/CheckStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0NoZWNrU3RvY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Report/ImportStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0ltcG9ydFN0b2NrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Report/InputStock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0lucHV0U3RvY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Role/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Role/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Role/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Server/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tun/Projects/SCGP/SCGP/Views/Shared/Error.cshtml]
@@ -30,6 +138,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/tun/Projects/SCGP/SCGP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tun/Projects/SCGP/SCGP/Views/Storage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RvcmFnZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tun/Projects/SCGP/SCGP/Views/_ViewImports.cshtml]

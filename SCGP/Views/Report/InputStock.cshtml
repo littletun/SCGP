@@ -1,0 +1,389 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        Input Stock Count
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Search</div>
+                <div class="mt-5">
+
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-3">
+                            <label for="" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected>All</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-3">
+                            <label for="plant" class="form-label">Storage Loc</label>
+                            <select class="form-control">
+                                <option selected>All</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-6">
+                            <div class="grid grid-cols-12 gap-6">
+                                <div class="col-span-3">
+                                    <label for="" class="form-label">Section</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="col-span-3">
+                                    <label for="" class="form-label">Row</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="col-span-3">
+                                    <label for="" class="form-label">Grade</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="col-span-3">
+                                    <label for="" class="form-label">Size</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-12">
+                            <button class="btn btn-primary">Search</button>
+                            <button class="btn btn-danger" data-tw-toggle="modal" data-tw-target="#stock-add-modal">Add Stock Count</button>
+                            <button class="btn btn-pending">Delete All</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Result</div>
+            <div class="mt-5">
+
+                <div class="w-full sm:w-auto mt-3 sm:mt-0">
+                    <div class="w-56 relative text-slate-500 ml-auto ">
+                        <input type="text" class="form-control w-56 box shadow-md pr-10" placeholder="Search...">
+                        <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto mt-5">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="whitespace-nowrap uppercase">no.</th>
+                                <th class="text-center whitespace-nowrap uppercase">plant</th>
+                                <th class="text-center whitespace-nowrap uppercase">storage loc</th>
+                                <th class="text-center whitespace-nowrap uppercase">section</th>
+                                <th class="text-center whitespace-nowrap uppercase">row</th>
+                                <th class="text-center whitespace-nowrap uppercase">grade</th>
+                                <th class="text-center whitespace-nowrap uppercase">size</th>
+                                <th class="text-center whitespace-nowrap uppercase">qty</th>
+                                <th class="text-center whitespace-nowrap uppercase">create by</th>
+                                <th class="text-center whitespace-nowrap uppercase">create date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="whitespace-nowrap uppercase">1</td>
+                                <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                <td class="text-center whitespace-nowrap uppercase">9</td>
+                                <td class="text-center whitespace-nowrap uppercase">10</td>
+                                <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                <td class="text-center whitespace-nowrap uppercase">1</td>
+                                <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap uppercase">2</td>
+                                <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                <td class="text-center whitespace-nowrap uppercase">9</td>
+                                <td class="text-center whitespace-nowrap uppercase">10</td>
+                                <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                <td class="text-center whitespace-nowrap uppercase">1</td>
+                                <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap uppercase">3</td>
+                                <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                <td class="text-center whitespace-nowrap uppercase">9</td>
+                                <td class="text-center whitespace-nowrap uppercase">10</td>
+                                <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                <td class="text-center whitespace-nowrap uppercase">1</td>
+                                <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap uppercase">4</td>
+                                <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                <td class="text-center whitespace-nowrap uppercase">9</td>
+                                <td class="text-center whitespace-nowrap uppercase">10</td>
+                                <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                <td class="text-center whitespace-nowrap uppercase">1</td>
+                                <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap uppercase">5</td>
+                                <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                <td class="text-center whitespace-nowrap uppercase">9</td>
+                                <td class="text-center whitespace-nowrap uppercase">10</td>
+                                <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                <td class="text-center whitespace-nowrap uppercase">1</td>
+                                <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="stock-detail-modal" class="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="font-medium text-base mr-auto">Stock Detail</h2>
+                </div>
+                <div class="modal-body p-10 ">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-6">
+                            <label for="" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected>7521</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-6">
+                            <label for="plant" class="form-label">Storage Loc</label>
+                            <select class="form-control">
+                                <option selected>Please Select</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-12">
+                            <div class="grid grid-cols-5 gap-6">
+                                <div class="">
+                                    <label for="" class="form-label">Section</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Row</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Grade</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Size</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Qty (ROL/REAM)</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-auto h-[320px] mt-5">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="whitespace-nowrap uppercase">delete</th>
+                                    <th class="text-center whitespace-nowrap uppercase">plant</th>
+                                    <th class="text-center whitespace-nowrap uppercase">storage loc</th>
+                                    <th class="text-center whitespace-nowrap uppercase">section</th>
+                                    <th class="text-center whitespace-nowrap uppercase">row</th>
+                                    <th class="text-center whitespace-nowrap uppercase">grade</th>
+                                    <th class="text-center whitespace-nowrap uppercase">size</th>
+                                    <th class="text-center whitespace-nowrap uppercase">qty</th>
+                                    <th class="text-center whitespace-nowrap uppercase">create by</th>
+                                    <th class="text-center whitespace-nowrap uppercase">create date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="whitespace-nowrap uppercase"><button class="btn btn-danger"><i data-lucide="trash-2" class="w-4 h-4"></i></button></td>
+                                    <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                    <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                    <td class="text-center whitespace-nowrap uppercase">9</td>
+                                    <td class="text-center whitespace-nowrap uppercase">10</td>
+                                    <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1</td>
+                                    <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                    <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                                </tr>
+                                <tr>
+                                    <td class="whitespace-nowrap uppercase"><button class="btn btn-danger"><i data-lucide="trash-2" class="w-4 h-4"></i></button></td>
+                                    <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                    <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                    <td class="text-center whitespace-nowrap uppercase">9</td>
+                                    <td class="text-center whitespace-nowrap uppercase">10</td>
+                                    <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1</td>
+                                    <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                    <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                                </tr>
+                                <tr>
+                                    <td class="whitespace-nowrap uppercase"><button class="btn btn-danger"><i data-lucide="trash-2" class="w-4 h-4"></i></button></td>
+                                    <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                    <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                    <td class="text-center whitespace-nowrap uppercase">9</td>
+                                    <td class="text-center whitespace-nowrap uppercase">10</td>
+                                    <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1</td>
+                                    <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                    <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                                </tr>
+                                <tr>
+                                    <td class="whitespace-nowrap uppercase"><button class="btn btn-danger"><i data-lucide="trash-2" class="w-4 h-4"></i></button></td>
+                                    <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                    <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                    <td class="text-center whitespace-nowrap uppercase">9</td>
+                                    <td class="text-center whitespace-nowrap uppercase">10</td>
+                                    <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1</td>
+                                    <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                    <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                                </tr>
+                                <tr>
+                                    <td class="whitespace-nowrap uppercase"><button class="btn btn-danger"><i data-lucide="trash-2" class="w-4 h-4"></i></button></td>
+                                    <td class="text-center whitespace-nowrap uppercase"><a href="javascritp:;" class="text-primary" data-tw-toggle="modal" data-tw-target="#stock-detail-modal">7521</a></td>
+                                    <td class="text-center whitespace-nowrap uppercase">P1, P3</td>
+                                    <td class="text-center whitespace-nowrap uppercase">9</td>
+                                    <td class="text-center whitespace-nowrap uppercase">10</td>
+                                    <td class="text-center whitespace-nowrap uppercase">CAI120E</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1330</td>
+                                    <td class="text-center whitespace-nowrap uppercase">1</td>
+                                    <td class="text-center whitespace-nowrap uppercase">BPWH</td>
+                                    <td class="text-center whitespace-nowrap uppercase">08-01-2019 12:03</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-20 mr-1">Close</button>
+                    <button type="button" class="btn btn-primary w-20">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stock-add-modal" class="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="font-medium text-base mr-auto">Stock Add</h2>
+                </div>
+                <div class="modal-body p-10 ">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-6">
+                            <label for="" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected>Please Select</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-6">
+                            <label for="plant" class="form-label">Storage Loc</label>
+                            <select class="form-control">
+                                <option selected>Please Select</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-12">
+                            <div class="grid grid-cols-5 gap-6">
+                                <div class="">
+                                    <label for="" class="form-label">Section</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Row</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Grade</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Size</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="">
+                                    <label for="" class="form-label">Qty (ROL/REAM)</label>
+                                    <input type="text" class="form-control" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-auto h-[320px] mt-5">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="whitespace-nowrap uppercase">delete</th>
+                                    <th class="text-center whitespace-nowrap uppercase">plant</th>
+                                    <th class="text-center whitespace-nowrap uppercase">storage loc</th>
+                                    <th class="text-center whitespace-nowrap uppercase">section</th>
+                                    <th class="text-center whitespace-nowrap uppercase">row</th>
+                                    <th class="text-center whitespace-nowrap uppercase">grade</th>
+                                    <th class="text-center whitespace-nowrap uppercase">size</th>
+                                    <th class="text-center whitespace-nowrap uppercase">qty</th>
+                                    <th class="text-center whitespace-nowrap uppercase">create by</th>
+                                    <th class="text-center whitespace-nowrap uppercase">create date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-20 mr-1">Close</button>
+                    <button type="button" class="btn btn-primary w-20">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

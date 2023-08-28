@@ -1,0 +1,110 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        Report Stock SAP
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Search</div>
+                <div class="mt-5">
+
+                    <div class="flex flex-wrap gap-6">
+                        <div class="">
+                            <label for="" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected disabled>Please Select</option>
+                            </select>
+                        </div>
+
+                        <div class="">
+                            <label for="plant" class="form-label">Storage Loc</label>
+                            <select class="form-control">
+                                <option selected disabled>Please Select</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary self-end">View Report</button>
+                        <button class="btn btn-pending self-end">Export Data</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Result</div>
+            <div class="mt-5">
+
+                <div class="w-full sm:w-auto mt-3 sm:mt-0">
+                    <div class="w-56 relative text-slate-500 ml-auto ">
+                        <input type="text" class="form-control w-56 box shadow-md pr-10" placeholder="Search...">
+                        <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-12 gap-6 mt-5">
+                    <div class="intro-y col-span-12 overflow-x-auto ">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="whitespace-nowrap uppercase">plant</th>
+                                    <th class="text-center whitespace-nowrap uppercase">grade</th>
+                                    <th class="text-center whitespace-nowrap uppercase">size</th>
+                                    <th class="text-center whitespace-nowrap uppercase">sap qty</th>
+                                    <th class="text-center whitespace-nowrap uppercase">sap weight</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
+                        <nav class="w-full sm:w-auto sm:mr-auto">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-left"></i> </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-left"></i> </a>
+                                </li>
+                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item active"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-right"></i> </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-right"></i> </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <select class="w-20 form-select box mt-3 sm:mt-0 shadow-md">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>35</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

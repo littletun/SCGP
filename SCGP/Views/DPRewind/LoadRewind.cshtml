@@ -1,0 +1,198 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        Load Rewind No
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">สร้างข้อมูล Rewind จากแผนบริการลูกค้า</div>
+                <div class="mt-5">
+
+                    <div class="intro-y flex flex-wrap gap-5">
+                        <div>
+                            <label for="rewind-no" class="form-label">Rewind No</label>
+                            <input id="rewind-no" type="text" class="form-control" placeholder="">
+                        </div>
+
+                        <div>
+                            <label for="plant" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected disabled>Please Select</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary shadow-md self-end" data-tw-merge>Load Data</button>
+                    </div>
+
+                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+
+                        <div class="hidden md:block mx-auto text-slate-500">Showing 1 to 10 of 150 entries</div>
+                        <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                            <div class="w-56 relative text-slate-500 shadow-md">
+                                <input type="text" class="form-control w-56 box pr-10" placeholder="Search...">
+                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto mt-5">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="whitespace-nowrap uppercase">plant</th>
+                                    <th class="text-center whitespace-nowrap uppercase">material</th>
+                                    <th class="text-center whitespace-nowrap uppercase">total qty</th>
+                                    <th class="text-center whitespace-nowrap uppercase">REMAIN QTY</th>
+                                    <th class="text-center whitespace-nowrap uppercase">REWIND QTY</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="w-20">
+                                        <div class="form-check justify-center">
+                                            <input id="" class="form-check-input" type="checkbox" value="">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">Z02GEH170E1260175B</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-20">
+                                        <div class="form-check justify-center">
+                                            <input id="" class="form-check-input" type="checkbox" value="">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">Z02GEH170E1410175B</td>
+                                    <td class="text-center">8</td>
+                                    <td class="text-center">8</td>
+                                    <td class="text-center">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-20">
+                                        <div class="form-check justify-center">
+                                            <input id="" class="form-check-input" type="checkbox" value="">
+                                        </div>
+                                    </td>
+                                    <td class="text-center">Z02GEH170E140075BB</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- BEGIN: Pagination -->
+                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center mt-5">
+                        <nav class="w-full sm:w-auto sm:mr-auto">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-left"></i> </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-left"></i> </a>
+                                </li>
+                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item active"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-right"></i> </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-right"></i> </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <select class="w-20 form-select mt-3 sm:mt-0">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>35</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+                    <!-- END: Pagination -->
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">เพิ่มข้อมูล Material</div>
+                <div class="mt-5">
+
+                    <div class="grid grid-cols-12 gap-3 p-2">
+                        <div class="col-span-6">
+                            <div class="border border-slate-200/60 shadow-md h-full p-5">
+                                <div class="intro-y flex flex-wrap gap-5">
+                                    <div>
+                                        <label for="rewind-no" class="form-label">Material</label>
+                                        <input id="rewind-no" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="plant" class="form-label">QTY</label>
+                                        <input id="plant" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <button class="btn btn-primary shadow-md self-end" data-tw-merge>Add</button>
+                                </div>
+
+                                <div class="overflow-x-auto mt-5">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="whitespace-nowrap"></th>
+                                                <th class="text-center whitespace-nowrap">MATERIAL</th>
+                                                <th class="text-center whitespace-nowrap">QTY</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-6">
+                            <div class="border border-slate-200/60 shadow-md p-5">
+                                <div class="intro-y flex flex-col gap-5">
+                                    <div>
+                                        <label for="rewind-no" class="form-label">DP No</label>
+                                        <input id="rewind-no" type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <div>
+                                        <label for="plant" class="form-label">Remark</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex justify-center gap-5 mt-5">
+                                    <button class="btn btn-primary shadow-md self-end" data-tw-merge>Create DP</button>
+                                    <button class="btn btn-warning shadow-md self-end" data-tw-merge>พิมพ์ใบตั้ง</button>
+                                    <button class="btn btn-secondary shadow-md self-end" data-tw-merge>Clear Screen</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END: Content -->
+</div>

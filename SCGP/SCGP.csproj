@@ -7,12 +7,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\MasterData\" />
+    <None Remove="Views\Authorize\" />
+    <None Remove="Views\Role\" />
+    <None Remove="Views\Server\" />
+    <None Remove="Views\Plant\" />
+    <None Remove="Views\Storage\" />
+    <None Remove="Views\Problems\" />
+    <None Remove="Views\GoodsTransfer\" />
+    <None Remove="Views\GoodsIssue\" />
+    <None Remove="Views\Login\" />
+    <None Remove="Views\DPRewind\" />
+    <None Remove="Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\js\" />
-    <Folder Include="wwwroot\images\" />
-    <Folder Include="Views\MasterData\" />
+    <Folder Include="Views\Authorize\" />
+    <Folder Include="Views\Role\" />
+    <Folder Include="Views\Server\" />
+    <Folder Include="Views\Plant\" />
+    <Folder Include="Views\Storage\" />
+    <Folder Include="Views\Problems\" />
+    <Folder Include="Views\GoodsTransfer\" />
+    <Folder Include="Views\GoodsIssue\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\DPRewind\" />
+    <Folder Include="Views\Report\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\js\" />
