@@ -1,0 +1,111 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        View DP Detail
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">View DP Detail</div>
+                <div class="mt-5">
+
+                    <div class="intro-y flex flex-wrap gap-5">
+                        <div>
+                            <label for="rewind-no" class="form-label">DP No</label>
+                            <input id="rewind-no" type="text" class="form-control" placeholder="">
+                        </div>
+
+                        <div>
+                            <label for="plant" class="form-label">Plant</label>
+                            <select class="form-control">
+                                <option selected disabled>Please Select</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary shadow-md self-end" data-tw-merge>Select</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Result</div>
+            <div class="mt-5">
+
+                <div class="grid grid-cols-12 gap-3 p-2">
+                    <div class="col-span-12">
+                        <div class="border border-slate-200/60 shadow-md h-full p-5">
+                            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">ข้อมูลการวางแผน DP Rewind</div>
+                            <div class="intro-y flex flex-wrap gap-5 mt-5">
+                                <div>
+                                    <label for="rewind-no" class="form-label">Rewind No</label>
+                                    <input id="rewind-no" type="text" class="form-control" placeholder="" readonly>
+                                </div>
+
+                                <div class="flex justify-center gap-2 mt-5">
+                                    <button class="btn btn-warning shadow-md self-end" data-tw-merge>พิมพ์ใบตั้ง</button>
+                                    <button class="btn btn-secondary shadow-md self-end" data-tw-merge>Clear Screen</button>
+                                    <button class="btn btn-danger shadow-md self-end" data-tw-merge>ยกเลิก DP</button>
+                                </div>
+                            </div>
+
+                            <div class="overflow-x-auto mt-5">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center whitespace-nowrap">MATERIAL</th>
+                                            <th class="text-center whitespace-nowrap">QTY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">Z02CA-150D2040117N</td>
+                                            <td class="text-center">1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Z02CA-150D2000117N</td>
+                                            <td class="text-center">1</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12">
+                        <div class="border border-slate-200/60 shadow-md h-full p-5">
+                            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">ข้อมูลการสแกน Batch</div>
+
+                            <div class="overflow-x-auto mt-5">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="whitespace-nowrap">MATERIAL</th>
+                                            <th class="text-center whitespace-nowrap">BATCH</th>
+                                            <th class="text-center whitespace-nowrap">QTY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

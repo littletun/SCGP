@@ -1,0 +1,172 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        View Weight by DP
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">View Weight by DP</div>
+                <div class="mt-5">
+
+                    <div class="intro-y flex flex-wrap gap-5">
+                        <div>
+                            <label for="rewind-no" class="form-label">DP No</label>
+                            <input id="rewind-no" type="text" class="form-control" placeholder="">
+                        </div>
+
+                        <button class="btn btn-primary shadow-md self-end" data-tw-merge>View Weight</button>
+                        <button class="btn btn-secondary shadow-md self-end" data-tw-merge>Reset</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Result</div>
+                <div class="mt-5">
+
+                    <div class="intro-y col-span-12 flex flex-wrap  items-center mt-2">
+                        <div class="flex flex-wrap sm:flex-nowrap gap-4">
+                            <div class="text-lg font-medium">DP No : <span class="text-primary">0413617276</span></div>
+                            <div class="text-lg font-medium">Total Weight(SAP) : <span class="text-primary">23.647</span></div>
+                            <div class="text-lg font-medium">Total Weight(H/H) : <span class="text-primary">23.647</span></div>
+                        </div>
+                        <div class="w-full sm:w-auto mt-3 md:mt-0 ml-auto">
+                            <div class="w-56 relative text-slate-500 shadow-md">
+                                <input type="text" class="form-control w-56 box pr-10" placeholder="Search...">
+                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto mt-5">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="whitespace-nowrap">NO.</th>
+                                    <th class="text-center whitespace-nowrap">MATERIAL</th>
+                                    <th class="text-center whitespace-nowrap">SAP QTY</th>
+                                    <th class="text-center whitespace-nowrap">HH QTY</th>
+                                    <th class="text-center whitespace-nowrap">SAP WEIGHT</th>
+                                    <th class="text-center whitespace-nowrap">HH WEIGHT</th>
+                                    <th class="text-center whitespace-nowrap">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="intro-x h-16">
+                                    <td class="font-medium">1</td>
+                                    <td class="text-center">Z02kt-125E0920127N</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">0.882</td>
+                                    <td class="text-center">0.882</td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;" data-tw-toggle="modal" data-tw-target="#material-modal"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Detail </a>
+                                            <!-- <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x h-16">
+                                    <td class="font-medium">2</td>
+                                    <td class="text-center">Z02kt-125E1070127N</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">1.013</td>
+                                    <td class="text-center">1.013</td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;" data-tw-toggle="modal" data-tw-target="#material-modal"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Detail </a>
+                                            <!-- <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x h-16">
+                                    <td class="font-medium">3</td>
+                                    <td class="text-center">Z02kt-125E1150127N</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">1.100</td>
+                                    <td class="text-center">1.100</td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;" data-tw-toggle="modal" data-tw-target="#material-modal"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Detail </a>
+                                            <!-- <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td class="text-right" colspan="2">TOTAL</td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">2.995</td>
+                                    <td class="text-center">2.995</td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN: Modal Content -->
+    <div id="material-modal" class="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="font-medium text-base mr-auto">Material</h2>
+                </div>
+                <div class="modal-body p-10 ">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="whitespace-nowrap">NO.</th>
+                                <th class="text-center whitespace-nowrap">BATCH</th>
+                                <th class="text-center whitespace-nowrap">SAP WEIGHT</th>
+                                <th class="text-center whitespace-nowrap">HH WEIGHT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="intro-x h-16">
+                                <td class="font-medium">1</td>
+                                <td class="text-center">333A28504T</td>
+                                <td class="text-center">1.246</td>
+                                <td class="text-center">1.246</td>
+                            </tr>
+                            <tr class="intro-x h-16">
+                                <td class="font-medium">2</td>
+                                <td class="text-center">333A28504T</td>
+                                <td class="text-center">1.255</td>
+                                <td class="text-center">1.255</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="text-right" colspan="2">TOTAL</td>
+                                <td class="text-center">2.501</td>
+                                <td class="text-center">2.501</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-20 mr-1">Close</button>
+                    <!-- <button type="button" class="btn btn-primary w-20">Save</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Modal Content -->
+</div>

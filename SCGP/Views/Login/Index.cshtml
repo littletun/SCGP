@@ -1,0 +1,74 @@
+﻿@page
+@{
+    Layout = null;
+    
+}
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - SCGP</title>
+        <link rel="stylesheet" href="~/css/app.css" asp-append-version="true" />
+    </head>
+</head>
+<!-- END: Head -->
+
+<body class="login">
+    <div class="container sm:px-10">
+        <div class="block xl:grid grid-cols-2 gap-4">
+            <!-- BEGIN: Login Info -->
+            <div class="hidden xl:flex flex-col min-h-screen">
+                <div class="my-auto">
+                    <img alt="Midone - HTML Admin Template" class="-intro-x w-3/5 -mt-16" src="~/images/undraw_control_panel_re_y3ar.svg">
+                </div>
+            </div>
+            <!-- END: Login Info -->
+            <!-- BEGIN: Login Form -->
+            <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-10 xl:my-0">
+                <div class="my-auto mx-auto  bg-white dark:bg-darkmode-600 xl:bg-transparent px-5 sm:px-8 py-8 xl:p-0 rounded-md shadow-md xl:shadow-none w-full sm:w-3/4 lg:w-2/4 xl:w-auto">
+                    <img class="-intro-x w-56 -mt-16 mx-auto" src="~/images/SCGP_Primary Logo-02.png">
+                    <div class="intro-x w-80 mt-8" id="role-auth">
+                        <a href="" class="btn btn-primary py-3 block">SCG USER</a>
+                        <a href="javascript:;" class="btn btn-primary py-3 block mt-4" id="btn-private">PRIVATE USER</a>
+                    </div>
+
+                    <div class="hidden" id="private-user">
+                        <div class="intro-x mt-8">
+                            <input type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Username">
+                            <input type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Password">
+                        </div>
+                        <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
+                            <a href="/" class="btn btn-primary py-3 w-full align-top">Login</a>
+                            <a href="jacascript:;" class="btn btn-secondary py-3  mt-4 w-full align-top" id="btn-back">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Login Form -->
+        </div>
+    </div>
+
+    <!-- BEGIN: JS Assets-->
+    <script src="~/js/app.js"></script>
+    <!-- END: JS Assets-->
+
+    <script>const roleAuth = document.querySelector('#role-auth')
+        const privateUser = document.querySelector('#private-user')
+        const btnPrivateEl = document.querySelector('#btn-private')
+        const btnBackEl = document.querySelector('#btn-back')
+
+        const ToggleForm = () => {
+            roleAuth.classList.toggle('hidden')
+            privateUser.classList.toggle('hidden')
+        }
+
+        btnPrivateEl.addEventListener('click', ToggleForm)
+        btnBackEl.addEventListener('click', ToggleForm)</script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        Print DP Rewind
+    </h2>
+
+    <div class="grid grid-cols-12 gap-6 mt-5">
+
+        <div class="intro-y box col-span-12 p-5 mt-5">
+            <div class="border border-slate-200/60 rounded-md p-5">
+                <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Print DP Rewind</div>
+                <div class="mt-5">
+
+                    <div class="intro-y flex flex-wrap gap-5">
+                        <div>
+                            <label for="rewind-no" class="form-label">DP No</label>
+                            <input id="rewind-no" type="text" class="form-control" placeholder="">
+                        </div>
+
+                        <button class="btn btn-primary shadow-md self-end" data-tw-merge>Select</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-y box col-span-12 p-5 mt-5">
+        <div class="border border-slate-200/60 rounded-md p-5">
+            <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Result</div>
+            <div class="mt-5">
+
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-4">
+                        <label for="plant" class="form-label">License Car</label>
+                        <select class="form-control">
+                            <option selected disabled>Please Select</option>
+                        </select>
+                    </div>
+
+                    <div class="col-span-12 md:col-span-4">
+                        <label for="plant" class="form-label">Customer Code</label>
+                        <select class="form-control">
+                            <option selected disabled>Please Select</option>
+                        </select>
+                    </div>
+                    <div class="col-span-12 md:col-span-4">
+                        <label for="plant" class="form-label">Ship To</label>
+                        <select class="form-control">
+                            <option selected disabled>Please Select</option>
+                        </select>
+                    </div>
+                    <div class="col-span-12">
+                        <label for="plant" class="form-label">Remark</label>
+                        <textarea class="form-control" row="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto mt-5">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="whitespace-nowrap">MATERIAL</th>
+                                <th class="text-center whitespace-nowrap">BATCH</th>
+                                <th class="text-center whitespace-nowrap">QTY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-end flex-col md:flex-row gap-2 mt-5">
+        <button type="button" class="btn py-3 border-slate-300 text-slate-500 w-full md:w-52">Clear Screen</button>
+        <button type="button" class="btn py-3 btn-primary w-full md:w-52">Print DP</button>
+    </div>
+
+</div>

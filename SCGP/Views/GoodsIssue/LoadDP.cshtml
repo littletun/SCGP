@@ -1,0 +1,83 @@
+﻿@page
+@{
+}
+
+<div class="content">
+    <h2 class="intro-y text-lg font-medium mt-10">
+        Load DP No.
+    </h2>
+
+    <div class="intro-y box p-8 mt-5">
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-4 ">
+                <div class="form-inline">
+                    <label for="" class="form-label sm:w-20">DP No.</label>
+                    <input id="" type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="col-span-4 ">
+                <div class="form-inline">
+                    <label for="" class="form-label sm:w-20">DP No.</label>
+                    <input id="" type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="col-span-4 ">
+                <div class="form-inline">
+                    <label for="" class="form-label sm:w-20">DP No.</label>
+                    <input id="" type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="col-span-4 ">
+                <div class="form-inline">
+                    <label for="" class="form-label sm:w-20">DP No.</label>
+                    <input id="" type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="col-span-4 ">
+                <div class="form-inline">
+                    <label for="" class="form-label sm:w-20">DP No.</label>
+                    <input id="" type="text" class="form-control" placeholder="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex justify-end flex-col md:flex-row gap-2 mt-5">
+        <button type="button" class="btn py-3 border-slate-300 text-slate-500 w-full md:w-52">Reset</button>
+        <button type="button" class="btn py-3 btn-primary w-full md:w-52">Load DP</button>
+    </div>
+
+    <!-- BEGIN: Modal Content -->
+    <div id="add-data-modal" class="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="font-medium text-base mr-auto">Add New Problem</h2>
+                </div>
+                <div class="modal-body p-10 ">
+                    <div class="form-inline">
+                        <label for="" class="form-label sm:w-32">Problem Description</label>
+                        <input id="" type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-inline mt-5">
+                        <label for="" class="form-label sm:w-32">Status</label>
+                        <select class="form-control" aria-label="">
+                            <option>Active</option>
+                            <option>Inactive</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-20 mr-1">Cancel</button>
+                    <button type="button" class="btn btn-primary w-20">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Modal Content -->
+</div>
