@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SCGHH
+build_property.RootNamespace = SCGHH
+build_property.ProjectDir = C:\Users\jeaje\source\repos\SCGP\SCGHH\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jeaje\source\repos\SCGP\SCGHH
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/DPRewind/BatchInSAP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFBSZXdpbmRcQmF0Y2hJblNBUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/DPRewind/BatchNotInSAP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFBSZXdpbmRcQmF0Y2hOb3RJblNBUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/DPRewind/DPDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFBSZXdpbmRcRFBEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/DPRewind/MainMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRFBSZXdpbmRcTWFpbk1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/GI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxHSS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/GIDPAlreadyScan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxHSURQQWxyZWFkeVNjYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/GIViewStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxHSVZpZXdTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/GIViewStatusDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxHSVZpZXdTdGF0dXNEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/GIViewStatusScanData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxHSVZpZXdTdGF0dXNTY2FuRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/MainMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxNYWluTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/Mvt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxNdnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsIssue/ViewStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNJc3N1ZVxWaWV3U3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsReceipt/MainMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNSZWNlaXB0XE1haW5NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsReceipt/Mvt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNSZWNlaXB0XE12dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsReceipt/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNSZWNlaXB0XFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsTransfer/Mvt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNUcmFuc2ZlclxNdnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/GoodsTransfer/QiToUr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29vZHNUcmFuc2ZlclxRaVRvVXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/Home/PmPlant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbVBsYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/MainMenu/ChangePlant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcQ2hhbmdlUGxhbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/MainMenu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbk1lbnVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeaje/source/repos/SCGP/SCGHH/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-m95psv5825
