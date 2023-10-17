@@ -13,6 +13,7 @@
             <div class="border border-slate-200/60 rounded-md p-5">
                 <div class="font-medium text-base flex items-center border-b border-slate-200/60 pb-5">Search</div>
                 <div class="mt-5">
+                    <div class="alert alert-success-soft show flex items-center mb-5 md:max-w-[50%] hidden" role="alert"> <i data-lucide="alert-triangle" class="w-6 h-6 mr-2"></i> Save data on success <br> SAP Doc <button type="button" class="btn-close" data-tw-dismiss="alert" aria-label="Close"> <i data-lucide="x" class="w-4 h-4"></i> </button></div>
 
                     <div class="flex flex-wrap gap-6">
 
@@ -29,25 +30,27 @@
                             <input type="text" class="form-control">
                         </div>
                         <div class="hidden" id="remark">
-                            <label for="" class="form-label">เหตุผล</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option>Select</option>
-                                <option>เหตุผล 1</option>
-                                <option>เหตุผล 2</option>
-                                <option>เหตุผล 3</option>
+                            <label for="" class="form-label">Reason</label>
+                            <select class="form-select">
+                                <option value="">OC Reject</option>
+                                <option value="">ปัญหาคุณภาพ</option>
+                                <option value="">ปัญหาการผลิต</option>
+                                <option value="">ม้วนทดลอง</option>
+                                <option value="">อื่น ๆ</option>
                             </select>
                         </div>
+
 
                         <div class="">
                             <label>Condition of Goods</label>
                             <div class="flex flex-col sm:flex-row mt-2">
                                 <div class="form-check mr-2">
                                     <input id="radio-switch-4" class="form-check-input" type="radio" name="condition-goods" value="perfect">
-                                    <label class="form-check-label" for="radio-switch-4" selected>สมบูรณ์</label>
+                                    <label class="form-check-label" for="radio-switch-4" selected>Receive</label>
                                 </div>
                                 <div class="form-check mr-2 mt-2 sm:mt-0">
                                     <input id="radio-switch-5" class="form-check-input" type="radio" name="condition-goods" value="imperfect">
-                                    <label class="form-check-label" for="radio-switch-5">ไม่สมบูรณ์</label>
+                                    <label class="form-check-label" for="radio-switch-5">Reject</label>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +66,7 @@
                     </form>
 
                     <div class="flex-1 flex">
-                        <button class="btn btn-primary mt-5 ml-auto w-full md:w-52">Save</button>
+                        <button class="btn btn-primary mt-5 ml-auto w-full md:w-52" id="save-btn">Save</button>
                     </div>
 
                 </div>
@@ -84,6 +87,7 @@
                                     <th class="text-center whitespace-nowrap uppercase">batch</th>
                                     <th class="text-center whitespace-nowrap uppercase">weight</th>
                                     <th class="text-center whitespace-nowrap uppercase">material</th>
+                                    <th class="text-center whitespace-nowrap uppercase">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -92,10 +96,11 @@
                                     <td class="text-center">118A07708A</td>
                                     <td class="text-center">1.280</td>
                                     <td class="text-center">Z02CA-150D1690117N</td>
+                                    <td class="table-report__action w-56" rowspan="2"><a class="flex items-center text-danger w-fit mx-auto" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a></td>
                                 <tr>
                                     <td></td>
                                     <td colspan="2"></td>
-                                    <td class="text-center text-primary">สมบูรณ์</td>
+                                    <td class="text-center text-primary">Receive</td>
                                 </tr>
                                 </tr>
                                 <tr>
@@ -103,10 +108,11 @@
                                     <td class="text-center">118A07708A</td>
                                     <td class="text-center">1.280</td>
                                     <td class="text-center">Z02CA-150D1690117N</td>
+                                    <td class="table-report__action w-56" rowspan="2"><a class="flex items-center text-danger w-fit mx-auto" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a></td>
                                 <tr>
                                     <td></td>
                                     <td colspan="2"><img src="~/images/product-jpeg-500x500.webp" class="w-80" alt=""></td>
-                                    <td class="text-center"><span class="text-danger">ไม่สมบูรณ์</span><br />มีรอยขาด</td>
+                                    <td class="text-center"><span class="text-danger">Reject</span><br />มีรอยขาด</td>
                                 </tr>
                                 </tr>
                             </tbody>
@@ -118,11 +124,32 @@
         </div>
     </div>
     <div class="intro-y flex justify-end flex-col-reverse md:flex-row gap-2 mt-5" id="btn-general">
-        <button type="button" class="btn py-3 btn-pending w-full md:w-52">Clear</button>
         <button type="button" class="btn py-3 btn-primary w-full md:w-52">Send to SAP</button>
     </div>
 
-
+    <!-- BEGIN: Delete Confirmation Modal -->
+    <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="p-5 text-center">
+                        <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i>
+                        <div class="text-3xl mt-5">Are you sure?</div>
+                        <div class="text-slate-500 mt-2">
+                            Do you really want to delete these records?
+                            <br>
+                            This process cannot be undone.
+                        </div>
+                    </div>
+                    <div class="px-5 pb-8 text-center">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-danger w-24">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Delete Confirmation Modal -->
 
 
 </div>
@@ -136,4 +163,13 @@
                 radioEl[i].value === 'perfect' ? uploadEl.classList.add('hidden') : uploadEl.classList.remove('hidden')
                 radioEl[i].value === 'perfect' ? remarkEl.classList.add('hidden') : remarkEl.classList.remove('hidden')
             })
-        }</script>
+
+
+        }
+    const saveBtnEl = document.querySelector("#save-btn")
+    const alertEl = document.querySelector("[role='alert']")
+
+    saveBtnEl.addEventListener("click", () => {
+        alertEl.style.display = "flex"
+    })
+    </script>
