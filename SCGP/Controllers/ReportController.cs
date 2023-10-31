@@ -47,6 +47,10 @@ namespace SCGP.Controllers
         {
             return View();
         }
+        public IActionResult ReportGoodsReceiptProductionReject()
+        {
+            return View();
+        }
         public IActionResult ReportGoodsIssueByBatch()
         {
             return View();

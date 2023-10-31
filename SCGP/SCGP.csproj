@@ -18,6 +18,8 @@
     <None Remove="Views\Login\" />
     <None Remove="Views\DPRewind\" />
     <None Remove="Views\Report\" />
+    <None Remove="Views\Unit\" />
+    <None Remove="Views\Reason\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\js\" />
@@ -32,6 +34,8 @@
     <Folder Include="Views\Login\" />
     <Folder Include="Views\DPRewind\" />
     <Folder Include="Views\Report\" />
+    <Folder Include="Views\Unit\" />
+    <Folder Include="Views\Reason\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\js\" />
